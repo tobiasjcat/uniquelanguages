@@ -15,7 +15,7 @@ language_data = json.load(open("all_compiled.json"))
 def get_region(rname):
 	if rname in language_data:
 		return language_data[rname]
-	return 
+	return "Region not recognized", 404
 
 
 def main():
